@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/onrainst/public_html/
-    - /bin/cp -R public/* $DEPLOYPATH
