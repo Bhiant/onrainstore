@@ -3,3 +3,4 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/onrainst/public_html/
     - /bin/cp public/index.php $DEPLOYPATH
+    - /bin/cp -R public/admin $DEPLOYPATH
