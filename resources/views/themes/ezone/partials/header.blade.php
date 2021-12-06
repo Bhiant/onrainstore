@@ -24,7 +24,7 @@
                     <div class="mobile-menu">
                         <nav id="mobile-menu-active">
                             <ul class="menu-overflow">
-                                <li><a href="{{ url('admin/products') }}">admin</a></li>
+                                <li><a href="{{ url('admin/dashboard') }}">admin</a></li>
                                 <li><a href="{{ url('products') }}">Product</a></li>
                             </ul>
                         </nav>							
