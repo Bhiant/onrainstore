@@ -12,11 +12,12 @@
 				<p class="text-dark mb-2" style="font-weight: normal; font-size:16px; text-transform: uppercase;">Alamat Pengiriman</p>
 				<address>
 					{{ $order->customer_name }}
+					<br> Phone: {{ $order->customer_phone }}
 					<br> {{ $order->customer_alamat }}
 					<br> Kecamatan : {{ $order->customer_kecamatan }}
 					<br> Kabupaten/Kota : {{ $order->customer_city }}
 					<br> Provinsi : {{ $order->customer_province }}
-					<br> Phone: {{ $order->customer_phone }}
+					<br> Note : {{ $order->note }}
 				</address>
 			</div>
 			<div class="col-xl-6 col-lg-6">

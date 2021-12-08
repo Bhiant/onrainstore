@@ -98,7 +98,7 @@ class OrderController extends Controller
             'order_date' => $orderDate,
             'payment_status' => Order::UNPAID,
             'base_total_price' => $baseTotalPrice,
-            'node' => $params['note'],
+            'note' => $params['note'],
             'customer_admin_name' => $params['admin_name'],
             'customer_name' => $params['customer_name'],
             'customer_phone' => $params['phone'],
