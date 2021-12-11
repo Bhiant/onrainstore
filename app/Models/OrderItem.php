@@ -14,6 +14,7 @@ class OrderItem extends Model
         'base_total',
         'sku',
         'type',
+        'links',
         'name',
         'weight',
         'attributes',

@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests\OrderRequest;
 
 use App\Models\Order;
+use App\Models\Product;
 use App\Models\OrderItem;
 use App\Models\ProductInventory;
 
@@ -104,6 +105,7 @@ class OrderController extends Controller
     public function show($id)
     {
         $order = Order::withTrashed()->findOrFail($id);
+
 
         $this->data['order'] = $order;
 

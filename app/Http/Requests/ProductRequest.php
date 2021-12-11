@@ -53,6 +53,7 @@ class ProductRequest extends FormRequest
             'qty' => $qty,
             'status' => $status,
             'weight' => $weight,
+
         ];
     }
 }

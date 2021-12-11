@@ -23,7 +23,7 @@ class CreateProductsTable extends Migration
             $table->decimal('weight', 10, 2);
             $table->decimal('width', 10, 2);
             $table->decimal('height', 10, 2);
-            $table->decimal('length', 10, 2);
+            $table->text('links');
             $table->text('short_description');
             $table->text('description');
             $table->integer('status');

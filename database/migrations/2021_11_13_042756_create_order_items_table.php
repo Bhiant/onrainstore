@@ -24,6 +24,7 @@ class CreateOrderItemsTable extends Migration
             $table->decimal('sub_total', 16, 2)->default(0);
             $table->string('sku');
             $table->string('type');
+            $table->string('links');
             $table->string('name');
             $table->string('weight');
             $table->json('attributes');

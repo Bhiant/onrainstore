@@ -128,6 +128,7 @@ class OrderController extends Controller
                     'base_total' => $itemBaseTotal,
                     'sku' => $item->associatedModel->sku,
                     'type' => $product->type,
+                    'links' => $product->links,
                     'name' => $item->name,
                     'weight' => $item->associatedModel->weight,
                     'attributes' => json_encode($item->attributes),

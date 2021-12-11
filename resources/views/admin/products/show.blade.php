@@ -42,7 +42,7 @@
                         </div>
                         <label>Gambar Produk</label>
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" value="Silahkan cari folder yg sesuai dengan SKU" id="copyDESC" readonly>
+                            <input type="text" class="form-control" value="Silahkan cari folder yg sesuai dengan SKU" readonly>
                             <span class="input-group-append">
                                 <a role="button" class="btn btn-info btn-copy" href="https://drive.google.com/drive/u/0/folders/1HrxvcLScPPakonLYTfdoah9oajvF7sAh" target="_blank"><i class="fas fa-download"></i></a>
                             </span>

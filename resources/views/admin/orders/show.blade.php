@@ -32,7 +32,10 @@
 		<table class="table table-bordered table-striped text-center">
 			<thead>
 				<tr>
-					<th>#</th>
+					@can('edit_orders')
+					<th>Order Produk</th>
+					@endcan
+					<th>SKU</th>
 					<th>Item</th>
 					<th>Description</th>
 					<th>Quantity</th>
@@ -42,6 +45,9 @@
 			<tbody>
 				@forelse ($order->orderItems as $item)
 					<tr>
+						@can('edit_orders')
+						<td><a role="button" href="{{ $item->links }}" class="btn btn-secondary btn-default" target="_blank"><i class="fas fa-dolly"></i></a></td>
+						@endcan
 						<td>{{ $item->sku }}</td>
 						<td>{{ $item->name }}</td>
 						<td>{!! \General::showAttributes($item->attributes) !!}</td>

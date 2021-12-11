@@ -45,6 +45,10 @@
                             {!! Form::label('category_ids', 'Kategori') !!}
                             {!! General::selectMultiLevel('category_ids[]', $categories, ['class' => 'form-control', 'multiple' => true, 'selected' => !empty(old('category_ids')) ? old('category_ids') : $categoryIDs, 'placeholder' => '-- Pilih Kategori --']) !!}
                         </div>
+                        <div class="form-group">
+                            {!! Form::label('links', 'Order Produk') !!}
+                            {!! Form::text('links', null, ['class' => 'form-control', 'placeholder' => 'link']) !!}
+                        </div>
                         <div class="configurable-attributes">
                             @if (!empty($configurableAttributes) && empty($product))
                                 <p class="text-primary mt-4">Configurable Attributes</p>
