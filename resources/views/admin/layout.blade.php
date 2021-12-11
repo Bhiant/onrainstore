@@ -118,5 +118,31 @@
 			});
 		});
 </script>
+<script>
+  function copysku(){
+    var copyText = document.getElementById('copySKU');
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+  }
+  function copyname(){
+    var copyText = document.getElementById('copyNAME');
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+  }
+  function copyharga(){
+    var copyText = document.getElementById('copyHARGA');
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+  }
+  function copydesc(){
+    var copyText = document.getElementById('copyDESC');
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+  }
+</script>
 </body>
 </html>

@@ -194,7 +194,11 @@ class ProductController extends Controller
      */
     public function show($id)
     {
-        //
+        $product = Product::findOrFail($id);
+        $this->data['product'] = $product;
+
+
+        return view('admin.products.show', $this->data);
     }
 
     /**

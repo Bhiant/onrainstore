@@ -17,11 +17,9 @@
         <tr>
             <th>SKU</th>
             <th>Nama</th>
-            {{-- <th>Harga</th> --}}
+            <th>Harga</th>
             <th>Status</th>
-            @can('edit_products')
             <th>Action</th>
-            @endcan
         </tr>
         </thead>
         <tbody>
@@ -29,9 +27,10 @@
         <tr>
             <td>{{ $product->sku }}</td>
             <td>{{ $product->name }}</td>
-            {{-- <td>Rp. {{ number_format($product->price) }}</td> --}}
+            <td>Rp. {{ number_format($product->price) }}</td>
             <td>{{ $product->statusLabel() }}</td>
             <td>
+                <a href="{{ url('admin/products/'.$product->id)}} " class="bt btn-primary btn-sm">Show</a>
                 @can('edit_products')
                 <a href="{{ url('admin/products/'.$product->id.'/edit') }}" class="btn btn-warning btn-sm">Edit</a>
                 @endcan

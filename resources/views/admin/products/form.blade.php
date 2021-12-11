@@ -38,6 +38,10 @@
                             {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'name']) !!}
                         </div>
                         <div class="form-group">
+                            {!! Form::label('price', 'Price') !!}
+                            {!! Form::text('price', null, ['class' => 'form-control', 'placeholder' => 'price']) !!}
+                        </div>
+                        <div class="form-group">
                             {!! Form::label('category_ids', 'Kategori') !!}
                             {!! General::selectMultiLevel('category_ids[]', $categories, ['class' => 'form-control', 'multiple' => true, 'selected' => !empty(old('category_ids')) ? old('category_ids') : $categoryIDs, 'placeholder' => '-- Pilih Kategori --']) !!}
                         </div>
