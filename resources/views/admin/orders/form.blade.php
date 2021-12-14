@@ -46,6 +46,10 @@
                             {!! Form::label('status', 'Status') !!}
                             {!! Form::select('status', $statuses , null, ['class' => 'form-control', 'placeholder' => '-- Set Status --']) !!}
                         </div>
+                        <div class="form-group">
+                            {!! Form::label('resi', 'Resi/AWB') !!}
+                            {!! Form::text('resi', null, ['class' => 'form-control', 'placeholder' => 'Resi/AWB']) !!}
+                        </div>
                         <div class="form-footer pt-5 border-top">
                             <button type="submit" class="btn btn-primary btn-default">Save</button>
                             <a href="{{ url('admin/orders/'. $order->id) }}" class="btn btn-secondary btn-default">Back</a>

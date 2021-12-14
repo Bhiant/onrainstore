@@ -25,6 +25,7 @@ class Order extends Model
         'customer_kecamatan',
         'customer_city',
         'customer_province',
+        'resi',
         'approved_by',
         'approved_at',
         'cancelled_by',
@@ -66,7 +67,7 @@ class Order extends Model
 
     public static function generateCode()
     {
-        $dateCode = self::ORDERCODE . '/' . date('Ymd') . '/' . \General::integerToRoman(date('m')) . '/' . \General::integerToRoman(date('d')) . '/';
+        $dateCode = self::ORDERCODE . '/' . date('Ym') . '/';
 
         $lastOrder = self::select([\DB::raw('MAX(orders.code) AS last_code')])
             ->where('code', 'like', $dateCode . '%')

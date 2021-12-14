@@ -28,7 +28,7 @@
                         </div>
                         <label>Harga Produk</label>
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" value="{{ $product->price }}" id="copyHARGA" readonly>
+                            <input type="text" class="form-control" value="{{ number_format ($product->price) }}" id="copyHARGA" readonly>
                             <span class="input-group-append">
                                 <button type="submit" class="btn btn-info btn-copy"><i class="far fa-copy" onclick="copyharga()"></i></button>
                             </span>

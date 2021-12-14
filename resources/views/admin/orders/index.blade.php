@@ -30,7 +30,9 @@
 											{{ $order->code }}<br>
 											<span style="font-size: 12px; font-weight: normal"> {{\General::datetimeFormat($order->order_date) }}</span>
 										</td>
-										<td>{{ $order->status }}</td>
+										<td>
+											<a class="btn btn-warning" href="https://www.sap-express.id/layanan/tracking/details/{{ $order->resi }}" target="_blank">{{ $order->status }}</a><br>
+										</td>
 										<td>{{ $order->customer_name }}</td>
 										<td>{{ $order->customer_phone }}</td>
 										<td>{{\General::priceFormat($order->base_total_price) }}</td>
