@@ -47,7 +47,19 @@
                                 <a role="button" class="btn btn-info btn-copy" href="https://drive.google.com/drive/u/0/folders/1HrxvcLScPPakonLYTfdoah9oajvF7sAh" target="_blank"><i class="fas fa-download"></i></a>
                             </span>
                         </div>
+                        @can('edit_products')
+                        <label>link Produk</label>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" value="{{ $product->links }}" readonly>
+                            <span class="input-group-append">
+                                <a role="button" class="btn btn-info btn-copy" href="{{ $product->links }}" target="_blank"><i class="fas fa-server"></i></a>
+                            </span>
+                        </div>
+                        @endcan
                         <a href="{{ url('admin/products') }}" class="btn btn-secondary btn-default"><i class='fas fa-reply'></i> Kembali</a>
+                        @can('edit_products')
+                        <a href="{{ url('admin/products/'.$product->id.'/edit') }}" class="btn btn-warning btn-default"><i class="fas fa-edit"></i> Edit</a>
+                        @endcan
                     </div>
                 </div>
             </div>
